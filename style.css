@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #BFD7E4;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+body::before{
+  content: "";
+  background: #293241;
+  width: 100%;
+  height: 465px;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+#page{
+  width: 750px;
+  margin: auto;
+}
+
+h1, h2, legend, button{
+  font-family: 'Staatliches', sans-serif;
+  font-weight: 400;
+}
+
+header {
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 110px; 
+}
+
+header img{
+  width: 225px;
+  height: 100px;
+}
+
+#top{
+  height: 133px;
+  border-radius: 20px 20px 0px 0px;
+  background: #F67669;
+  padding: 50px 275px;
+  margin-top: 37px;
+}
+
+#top h2 {
+  color: #FFF;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+form{
+  border-radius: 0px 0px 20px 20px;
+  background: #FFF;
+  padding: 32px 64px 64px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 100px ;
+}
+
+fieldset{
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+fieldset legend {
+  color: #253B51;
+  font-size: 24px;
+  line-height: 34px;
+  border-bottom: 1px solid #E6E6F0;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 8px;
+  margin-bottom: 30px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-wrapper label,
+.input-checkbox-wrapper label {
+  color: #4E4958;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.input-wrapper label span {
+  color: #C1BCCC;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.input-wrapper input,
+.input-wrapper select,
+.input-wrapper textarea {
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid #E6E6F0;
+  background: #FAFAFC;
+  padding: 0 24px;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.input-wrapper select {
+  width: 50%;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1_54)'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1_54'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: right 24px top 50%;
+}
+
+.input-wrapper textarea {
+  height: 166px;
+  padding: 24px;
+}
+
+.input-checkbox-wrapper {
+  position: relative;
+}
+
+#doubt-check {
+  width: 24px;
+  height: 24px;
+  opacity: 0;
+  position: absolute;
+}
+
+.input-checkbox-wrapper label{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 30px;
+  width: fit-content;
+}
+
+.input-checkbox-wrapper label::before{
+  content: "";
+  width: 24px;
+  height: 24px;
+  border-radius: 8px;
+  background: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  /* display: block; */
+}
+
+#doubt-check:checked + label::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_5001_23)'%3E%3Cpath d='M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z' fill='%2342D3FF'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_5001_23'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A")
+}
+
+#doubt-check:focus + label::before {
+  outline: 2px solid black;
+}
+
+#student-fullname {
+  display: flex;
+  gap: 22px;
+}
+
+#student-fullname div {
+  width: 100%;
+}
+
+#scheduling {
+  display: flex;
+  gap: 20px;
+}
+
+#scheduling > div:nth-child(1) {
+  width: 100%;
+}
+
+form button {
+  border-radius: 8px;
+  background: #F67669;
+  padding: 15px 40px;
+  text-align: center;
+  border: none;
+  color: #FFF;
+  font-size: 20px;
+  line-height: 26px;
+}
